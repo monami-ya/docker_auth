@@ -4,3 +4,4 @@ ENTRYPOINT ["/auth_server"]
 CMD ["/config/auth_config.yml"]
 COPY ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 COPY auth_server .
+VOLUME /config
